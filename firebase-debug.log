@@ -1,0 +1,131 @@
+[debug] [2025-07-24T16:33:32.495Z] ----------------------------------------------------------------------
+[debug] [2025-07-24T16:33:32.497Z] Command:       /opt/homebrew/Cellar/node/24.4.1/bin/node /opt/homebrew/bin/firebase init
+[debug] [2025-07-24T16:33:32.497Z] CLI Version:   14.11.0
+[debug] [2025-07-24T16:33:32.497Z] Platform:      darwin
+[debug] [2025-07-24T16:33:32.497Z] Node Version:  v24.4.1
+[debug] [2025-07-24T16:33:32.497Z] Time:          Thu Jul 24 2025 22:03:32 GMT+0530 (India Standard Time)
+[debug] [2025-07-24T16:33:32.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-24T16:33:32.596Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-24T16:33:32.596Z] > authorizing via signed-in user (vs1658@srmist.edu.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/sanjeethaudayakumar/project-kisan-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-24T16:33:55.651Z] Using project from CLI flag: project-kisan-ai-466505
+[debug] [2025-07-24T16:33:55.653Z] Checked if tokens are valid: false, expires at: 1753362734560
+[debug] [2025-07-24T16:33:55.653Z] Checked if tokens are valid: false, expires at: 1753362734560
+[debug] [2025-07-24T16:33:55.653Z] > refreshing access token with scopes: []
+[debug] [2025-07-24T16:33:55.656Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-24T16:33:55.656Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-24T16:33:55.832Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-24T16:33:55.832Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-24T16:33:55.856Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-kisan-ai-466505 [none]
+[debug] [2025-07-24T16:33:56.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-kisan-ai-466505 200
+[debug] [2025-07-24T16:33:56.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-kisan-ai-466505 {"projectId":"project-kisan-ai-466505","projectNumber":"1015582125254","displayName":"Project Kisan AI","name":"projects/project-kisan-ai-466505","resources":{"hostingSite":"project-kisan-ai-466505"},"state":"ACTIVE","etag":"1_9aa6de43-b8cf-4b79-b66a-911c7b32e48b"}
+[info] i  Using project project-kisan-ai-466505 (Project Kisan AI) 
+[info] 
+=== App Hosting Setup
+[debug] [2025-07-24T16:33:56.267Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:33:56.267Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:33:56.267Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/project-kisan-ai-466505/billingInfo [none]
+[debug] [2025-07-24T16:33:57.680Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/project-kisan-ai-466505/billingInfo 200
+[debug] [2025-07-24T16:33:57.681Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/project-kisan-ai-466505/billingInfo {"name":"projects/project-kisan-ai-466505/billingInfo","projectId":"project-kisan-ai-466505","billingAccountName":"billingAccounts/01C4C2-67075F-81F7C4","billingEnabled":true}
+[debug] [2025-07-24T16:33:57.683Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:33:57.683Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:33:57.683Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-07-24T16:33:57.683Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:33:59.274Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-07-24T16:33:59.275Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-07-24T16:33:59.275Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:33:59.276Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:33:59.276Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com:enable [none]
+[debug] [2025-07-24T16:33:59.276Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com:enable x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:33:59.808Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com:enable 200
+[debug] [2025-07-24T16:33:59.808Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/firebaseapphosting.googleapis.com:enable [omitted]
+[debug] [2025-07-24T16:34:09.835Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.836Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.837Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.837Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.837Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.837Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.838Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.838Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:09.839Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com [none]
+[debug] [2025-07-24T16:34:09.839Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:34:09.841Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/secretmanager.googleapis.com [none]
+[debug] [2025-07-24T16:34:09.841Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/secretmanager.googleapis.com x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:34:09.843Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/run.googleapis.com [none]
+[debug] [2025-07-24T16:34:09.843Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/run.googleapis.com x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:34:09.845Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/iam.googleapis.com [none]
+[debug] [2025-07-24T16:34:09.845Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/iam.googleapis.com x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:34:11.423Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/run.googleapis.com 200
+[debug] [2025-07-24T16:34:11.424Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/run.googleapis.com [omitted]
+[debug] [2025-07-24T16:34:11.452Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/secretmanager.googleapis.com 200
+[debug] [2025-07-24T16:34:11.452Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/secretmanager.googleapis.com [omitted]
+[debug] [2025-07-24T16:34:11.459Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com 200
+[debug] [2025-07-24T16:34:11.459Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com [omitted]
+[debug] [2025-07-24T16:34:11.459Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:11.459Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:11.460Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com:enable [none]
+[debug] [2025-07-24T16:34:11.460Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com:enable x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:34:11.479Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/iam.googleapis.com 200
+[debug] [2025-07-24T16:34:11.479Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/iam.googleapis.com [omitted]
+[debug] [2025-07-24T16:34:12.023Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com:enable 200
+[debug] [2025-07-24T16:34:12.024Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/project-kisan-ai-466505/services/developerconnect.googleapis.com:enable [omitted]
+[debug] [2025-07-24T16:34:22.042Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:22.042Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:22.043Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts/firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-07-24T16:34:22.043Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts/firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/project-kisan-ai-466505
+[debug] [2025-07-24T16:34:22.043Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts/firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-07-24T16:34:23.620Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts/firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com:testIamPermissions 404
+[debug] [2025-07-24T16:34:23.620Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts/firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2025-07-24T16:34:23.625Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:23.625Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:23.625Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts [none]
+[debug] [2025-07-24T16:34:23.625Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2025-07-24T16:34:24.255Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts 200
+[debug] [2025-07-24T16:34:24.256Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/project-kisan-ai-466505/serviceAccounts [omitted]
+[debug] [2025-07-24T16:34:24.257Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:24.257Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:24.257Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:getIamPolicy [none]
+[debug] [2025-07-24T16:34:25.645Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:getIamPolicy 200
+[debug] [2025-07-24T16:34:25.645Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:getIamPolicy {"version":1,"etag":"BwY6az6sw4U=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:1015582125254@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1015582125254@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-1015582125254@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:1015582125254-compute@developer.gserviceaccount.com","serviceAccount:1015582125254@cloudservices.gserviceaccount.com","serviceAccount:project-kisan-ai-466505@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1015582125254@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:vs1658@srmist.edu.in"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-1015582125254@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]}]}
+[debug] [2025-07-24T16:34:25.646Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:25.646Z] Checked if tokens are valid: true, expires at: 1753378434832
+[debug] [2025-07-24T16:34:25.646Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:setIamPolicy [none]
+[debug] [2025-07-24T16:34:25.647Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:setIamPolicy {"policy":{"version":1,"etag":"BwY6az6sw4U=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:1015582125254@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1015582125254@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-1015582125254@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:1015582125254-compute@developer.gserviceaccount.com","serviceAccount:1015582125254@cloudservices.gserviceaccount.com","serviceAccount:project-kisan-ai-466505@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1015582125254@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:vs1658@srmist.edu.in"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-1015582125254@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2025-07-24T16:34:26.557Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:setIamPolicy 200
+[debug] [2025-07-24T16:34:26.557Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-kisan-ai-466505:setIamPolicy {"version":1,"etag":"BwY6r2YStJg=","bindings":[{"role":"roles/artifactregistry.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-artifactregistry.iam.gserviceaccount.com"]},{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:1015582125254@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1015582125254@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-1015582125254@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:1015582125254-compute@developer.gserviceaccount.com","serviceAccount:1015582125254@cloudservices.gserviceaccount.com","serviceAccount:project-kisan-ai-466505@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/firebasemods.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebasemods.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1015582125254@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firebasestorage.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firebasestorage.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-1015582125254@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:vs1658@srmist.edu.in"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-1015582125254@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-fbsvc@project-kisan-ai-466505.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@project-kisan-ai-466505.iam.gserviceaccount.com"]}]}
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
+[debug] [2025-07-24T16:52:27.832Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:101:37)
+    at Interface.emit (node:events:507:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1315:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:519:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
